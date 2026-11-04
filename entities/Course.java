@@ -1,7 +1,15 @@
 package entities;
 
+import core.DB;
+
 public class Course {
-    String id;
-    String name;
-    String createrId;
+    public String id;
+    public String name;
+    public String createrId;
+
+    public Course(String name, String createrId) {
+        this.id = "" + DB.courses.size();
+        this.name = name;
+        this.createrId = createrId;
+    }
 }
