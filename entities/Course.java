@@ -8,7 +8,7 @@ public class Course {
     public String createrId;
 
     public Course(String name, String createrId) {
-        this.id = "" + DB.courses.size();
+        this.id = "c" + DB.courses.size();
         this.name = name;
         this.createrId = createrId;
     }
